@@ -1,0 +1,23 @@
+<div class="radioButtons">
+  <span>Sort by: </span>
+  <div class="left">
+    <input
+      name="sort"
+      (change)="onItemChange($event.target.id)"
+      id="name"
+      type="radio"
+      [checked]="selection === 'name'"
+    />
+    <label for="name">name</label>
+  </div>
+  <div class="right">
+    <input
+      name="sort"
+      (change)="onItemChange($event.target.id)"
+      id="age"
+      type="radio"
+      [checked]="selection === 'age'"
+    />
+    <label for="age">age</label>
+  </div>
+</div>

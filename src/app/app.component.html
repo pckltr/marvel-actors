@@ -1,0 +1,7 @@
+<div class="card">
+  <div class="header">
+    <h1>Marvel actors</h1>
+    <app-buttons class="buttons" (sortTypeChanged)="changeSort($event)"></app-buttons>
+  </div>
+  <app-table [sortType]="sortType"></app-table>
+</div>
